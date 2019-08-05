@@ -1,0 +1,22 @@
+Explanation:: Load the data using genfromtxt. Fit the data and labels into SVM(for respective models)
+
+5.py : Has implementation of SVM using kernels:Linear,poly,rbf.
+
+
+
+On using Linear Kernel:
+	Train Error =0.0
+	Test Error = 0.024000000000000022
+	Number of support Vectors =[542 542]
+
+On using RBF Kernel:
+	Train Error = 0.0
+	Test Error =0.5
+	Number of Support Vectors = 3000,3000
+
+
+On using Polynomial Kernel:
+	Train Error =0.0
+	Test Error =0.02100000000000002
+	Number of Support Vectors = 817,938
+

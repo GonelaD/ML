@@ -1,0 +1,75 @@
+
+Explanation::
+
+Data that has results to be 1 or 5 are taken into consideration. Rest all are filtered.After Filtration from both training data and test data, it is fit into  respective SVMs.  And test errors are calculated for given test data using different SVMs.
+
+4.py covers a) and b) parts of the question.
+4c.py covers c) part of the question. On changing C and degree values in line 43, subparts are calculated.
+4d.py covers d) part of the question. On changing C and degree values in line 43, subparts are calculated. 
+
+a) (Code : 4.py)
+   Accuracy = 0.9787735849056604
+   Number of support vectors = 14,14
+
+b) First 50 points: (Code : 4.py)
+	Accuracy  = 0.9811320754716981
+	number of support vectors = 1,1
+
+   First 100 points:
+	Accuracy = 0.9811320754716981
+	number of support vectors = 22,22
+
+   First 200 points:
+	Accuracy = 0.9764150943396226	
+	Number of support Vectors = 58,55
+
+   First 800 points:
+	Accuracy = 0.9764150943396226
+	Number of support Vectors = 240,237
+
+c) Using Polynomial:(Code : 4c.py)
+	i) C=0.0001 
+		With Q=2, training error = 0.022421524663677084
+		With Q=5, training error = 0.006406149903907754
+		Answer = false
+ 
+	ii) C=0.001 
+		With Q=2, number of support vectors=76,76
+		With Q=5, number of support vectors=14,14
+		Answer = true
+
+	iii)C=0.01
+		With Q=2, training error = 0.004484304932735439
+		With Q=5, training error = 0.004484304932735439
+		Asnswer = fale
+	iv)C=1
+		With Q=2, test error = 0.018867924528301883
+	   	With Q=5, test error = 0.01650943396226412
+		Answer = true
+
+d) Using RBF: (Code 4d.py)
+	C = 0.01
+	training error = 0.0038436899423446302
+	test error = 0.021226415094339646
+
+	C = 1
+	training error = 0.004484304932735439
+	test error = 0.021226415094339646
+
+	C = 100
+	training error = 0.0032030749519538215
+	test error = 0.018867924528301883
+
+	C = 10000
+	training error =  0.002562459961563124
+	test error = 0.018867924528301883
+
+	C = 1000000
+	training error = 0.0012812299807815064
+	test error = 0.021226415094339646
+
+	Lowest Training error for C = 1000000
+	Lowest Training Error = 0.0012812299807815064
+
+
+
